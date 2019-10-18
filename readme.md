@@ -18,7 +18,7 @@ HTML & CSS | Hosted on Netlify
 
 ## Features
 
--   Responsive minimalistic landing page that links to Bandcamp
+-   Responsive minimalistic landing page with embedded Soundcloud and links to Bandcamp and Social Media
 
 ## Future
 
