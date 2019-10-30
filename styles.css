@@ -46,12 +46,6 @@ a:hover {
     width: 35vw;
 }
 
-#date {
-    color: black;
-    padding-top: 10px;
-    font-size: 1vw;
-}
-
 nav {
     font-size: 1vw;
     padding: 10px;
@@ -67,11 +61,6 @@ hr.line {
         width: 90vw;
     }
 
-    #date {
-        padding: 10px;
-        font-size: 4vw;
-    }
-
     nav {
         font-size: 4vw;
         padding: 10px;
@@ -85,11 +74,6 @@ hr.line {
 @media all and (min-width: 481px) and (max-width: 1024px) {
     img {
         width: 70vw;
-    }
-
-    #date {
-        padding: 10px;
-        font-size: 3.5vw;
     }
 
     nav {
