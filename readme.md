@@ -1,6 +1,6 @@
 # Crux Axul
 
-Minimal static and responsive landing page for the music label Crux Axul.
+Minimal static and responsive landing page for the Berlin music label Crux Axul. In constant development.
 
 ---
 
@@ -18,11 +18,11 @@ HTML & CSS | Hosted on Netlify
 
 ## Features
 
--   Responsive minimalistic landing page with embedded Soundcloud and links to Bandcamp and Social Media
+- Responsive minimalistic landing page with embedded Soundcloud and links to Bandcamp and Social Media
 
 ## Future
 
--   Integration of all social media channels, online shop, more content...
+- Proper website with catalogue, embedded social media, online shop etc.
 
 ## Credits
 
