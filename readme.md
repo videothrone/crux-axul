@@ -1,6 +1,6 @@
 # Crux Axul
 
-Minimal static and responsive landing page for the Berlin music label Crux Axul. In constant development.
+Minimal static and responsive landing page for the Berlin music label Crux Axul. In constant development. :)
 
 ---
 
