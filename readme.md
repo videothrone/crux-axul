@@ -1,6 +1,6 @@
 # Crux Axul
 
-Minimal static and responsive landing page for the Berlin music label Crux Axul. In constant development. :)
+Minimal static and responsive landing page for the Berlin music label [Crux Axul](https://www.cruxaxul.com). In constant development. :)
 
 ---
 
@@ -14,7 +14,9 @@ https://www.cruxaxul.com
 
 ## Tech
 
-HTML & CSS | Hosted on Netlify
+HTML & CSS <br>
+Continuous Deployment on Netlify |
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7a9099ab-7405-4a4b-9158-9fd381b5df26/deploy-status)](https://app.netlify.com/sites/admiring-einstein-59e50c/deploys)
 
 ## Features
 

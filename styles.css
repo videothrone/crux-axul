@@ -1,87 +1,87 @@
+@font-face {
+  font-family: "futur2";
+  src: url("./fonts/futur2.otf") format("opentype"),
+    url("./fonts/futur2.ttf") format("truetype");
+}
+
 body {
-    background-image: url("bg.jpg");
-    background-size: cover;
-    font-family: "futur2";
-    color: #8e6897;
-    margin: 0;
-    padding: 0;
-    font-size: 2.5vw;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  font-family: "futur2";
+  color: #8e6897;
+  margin: 0;
+  padding: 0;
+  font-size: 2.5vw;
 }
 
 .center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-@font-face {
-    font-family: "futur2";
-    src: url("./fonts/futur2.otf") format("opentype"),
-        url("./fonts/futur2.ttf") format("truetype");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 img {
-    width: 35vw;
-    cursor: pointer;
-    border: 3px solid #8e6897;
+  width: 35vw;
+  cursor: pointer;
+  border: 3px solid #8e6897;
 }
 
 img:hover {
-    border: 3px solid #c3b2c0;
+  border: 3px solid #c3b2c0;
 }
 
 a {
-    color: #8e6897;
+  color: #8e6897;
 }
 
 a:hover {
-    color: #c3b2c0;
+  color: #c3b2c0;
 }
 
 .content {
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    border: 3px solid #8e6897;
-    width: 35vw;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  border: 3px solid #8e6897;
+  width: 35vw;
 }
 
 nav {
-    font-size: 1vw;
-    padding: 10px;
+  font-size: 1vw;
+  padding: 10px;
 }
 
 hr.line {
-    border: 2px solid #8e6897;
-    margin: 0;
+  border: 2px solid #8e6897;
+  margin: 0;
 }
 
 @media all and (min-width: 320px) and (max-width: 480px) {
-    img {
-        width: 90vw;
-    }
+  img {
+    width: 90vw;
+  }
 
-    nav {
-        font-size: 4vw;
-        padding: 10px;
-    }
+  nav {
+    font-size: 4vw;
+    padding: 10px;
+  }
 
-    .content {
-        width: 90vw;
-    }
+  .content {
+    width: 90vw;
+  }
 }
 
 @media all and (min-width: 481px) and (max-width: 1024px) {
-    img {
-        width: 70vw;
-    }
+  img {
+    width: 70vw;
+  }
 
-    nav {
-        font-size: 3.5vw;
-        padding: 10px;
-    }
+  nav {
+    font-size: 3.5vw;
+    padding: 10px;
+  }
 
-    .content {
-        width: 70vw;
-    }
+  .content {
+    width: 70vw;
+  }
 }
