@@ -11,12 +11,11 @@ body {
   color: #8e6897;
   margin: 0;
   padding: 0;
-  font-size: 2.5vw;
 }
 
 .center {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   height: 100vh;
 }
@@ -31,14 +30,6 @@ img:hover {
   border: 3px solid #c3b2c0;
 }
 
-a {
-  color: #8e6897;
-}
-
-a:hover {
-  color: #c3b2c0;
-}
-
 .content {
   background-color: rgb(255, 255, 255);
   text-align: center;
@@ -47,16 +38,39 @@ a:hover {
 }
 
 nav {
-  font-size: 1vw;
-  padding: 10px;
+  padding: 1rem 1rem 0.4rem 1rem;
+}
+
+nav a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #8e6897;
+}
+
+nav a:hover {
+  color: #c3b2c0;
 }
 
 hr.line {
-  border: 2px solid #8e6897;
+  border: 3px solid #8e6897;
   margin: 0;
 }
 
-@media all and (min-width: 320px) and (max-width: 480px) {
+#whitespace {
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.slash {
+  color: #000;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  line-height: 2;
+}
+
+/* @media all and (min-width: 320px) and (max-width: 480px) {
   img {
     width: 90vw;
   }
@@ -84,4 +98,4 @@ hr.line {
   .content {
     width: 70vw;
   }
-}
+} */
