@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: "futur2";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -14,7 +16,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #8e6897;
+  color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -23,88 +25,47 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-}
-
-img {
-  width: 300px;
-}
-
-.content {
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  border: 3px solid #8e6897;
-  width: 35vw;
+  padding: 1rem;
+  font-size: 2rem;
 }
 
 nav {
-  padding: 1rem 1rem 0.4rem 1rem;
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  height: 100vh;
 }
 
 nav a {
-  font-size: 2.5rem;
+  font-size: 4rem;
   text-decoration: none;
-  color: #8e6897;
+  color: #fff;
 }
 
 nav a:hover {
   color: #c3b2c0;
 }
 
-hr.line {
-  border: 3px solid #8e6897;
-  margin: 0;
-}
-
-#whitespace {
-  background-color: #fff;
-  width: 100%;
-  text-align: center;
-}
-
-.slash {
-  color: #000;
-  font-size: 2rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-  line-height: 2;
-}
-
-/* .border-top {
-  margin-top: 5rem;
-  border: 5px solid #8e6897;
-  border-bottom: none;
-  border-right: none;
-  border-left: none;
-} */
-
-.border-top {
+.header {
   display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 2rem;
-}
-.border-top::before,
-.border-top::after {
-  content: "";
-  flex: 1;
-  border-bottom: 5px solid #8e6897;
-}
-.border-top::before {
-  margin-right: 0.25em;
-}
-.border-top::after {
-  margin-left: 0.25em;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-#outer-border {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 5px solid #8e6897;
-  width: 80%;
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo > img {
+  width: 20vh;
+}
+
+.border {
+  margin-bottom: 1.5rem;
+  border: 1rem solid #8e6897;
   height: 90%;
 }
 
