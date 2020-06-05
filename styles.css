@@ -23,10 +23,9 @@ body {
 
 .center {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   padding: 1rem;
-  font-size: 2rem;
 }
 
 nav {
@@ -38,7 +37,7 @@ nav {
 }
 
 nav a {
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-decoration: none;
   color: #fff;
 }
@@ -65,8 +64,28 @@ nav a:hover {
 
 .border {
   margin-bottom: 1.5rem;
-  border: 1rem solid #8e6897;
+  /* border: 1rem solid rgba(142, 104, 151, 0.5); */
   height: 90%;
+  background-color: rgba(142, 104, 151, 0.5);
+}
+
+.center-left {
+  width: 50%;
+}
+
+.center-left > img {
+  width: 100%;
+  max-width: 700px;
+  padding: 1rem;
+  object-fit: cover;
+}
+
+.center-right {
+  padding: 1rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /* @media all and (min-width: 320px) and (max-width: 480px) {
