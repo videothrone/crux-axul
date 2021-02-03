@@ -1,84 +1,200 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @font-face {
-  font-family: "futur2";
-  src: url("./fonts/futur2.otf") format("opentype"),
-    url("./fonts/futur2.ttf") format("truetype");
+  font-family: "UnifrakturCook-Bold-Terrible";
+  src: url("./fonts/UnifrakturCook-Bold-Terrible.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Futur2";
+  src: url("./fonts/futur2.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "AlteHaasGroteskBold";
+  src: url("./fonts/AlteHaasGroteskBold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "AlteHaasGroteskRegular";
+  src: url("./fonts/AlteHaasGroteskRegular.ttf") format("truetype");
 }
 
 body {
-  background-image: url("img/bg.jpg");
+  background-image: url("./img/cxa004-grain.jpg");
   background-size: cover;
-  font-family: "futur2";
-  /* background-color: #f5ea42; */
-  color: #8e6897;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
   margin: 0;
   padding: 0;
-  font-size: 2.5vw;
-}
-
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-img {
-  width: 35vw;
-  cursor: pointer;
-  border: 3px solid #f5ea42;
-}
-
-img:hover {
-  border: 3px solid #fff;
-}
-
-a {
-  color: #000;
-}
-
-a:hover {
-  color: #fff;
-}
-
-.content {
-  background-color: #f5ea42;
-  text-align: center;
-  border: 3px solid #f5ea42;
-  width: 35vw;
-  color: #fff;
 }
 
 nav {
-  font-size: 1.5vw;
-  padding: 5px 10px 10px 10px;
+  font-family: "UnifrakturCook-Bold-Terrible";
+  font-size: 3.5rem;
+  margin-top: 5.5rem;
+  margin-left: 2rem;
 }
 
-@media all and (min-width: 320px) and (max-width: 480px) {
-  img {
-    width: 90vw;
-  }
+a {
+  text-decoration: none;
+  color: #f17c6b;
+}
 
-  nav {
-    font-size: 4vw;
-    padding: 10px;
-  }
+a:hover {
+  color: #52908f;
+}
 
-  .content {
-    width: 90vw;
+#all-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#content {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: "AlteHaasGroteskBold";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#content span {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  color: #52908f;
+}
+
+#releasetext {
+  margin-top: 2rem;
+  font-family: "AlteHaasGroteskBold";
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#releasetext span {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #52908f;
+}
+
+#releasetext a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#releasetext a:hover {
+  color: #52908f;
+}
+
+#links {
+  display: flex;
+  flex-direction: row;
+}
+
+#video-wrapper {
+  max-width: 100%;
+  width: 60%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#video {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+#video iframe,
+#video object,
+#video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#cxa-logo {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#cxa-logo > img {
+  width: 300px;
+  filter: invert(74%) sepia(91%) saturate(2566%) hue-rotate(314deg)
+    brightness(97%) contrast(94%);
+}
+
+@media all and (max-width: 1600px) {
+  #video-wrapper {
+    width: 70%;
   }
 }
 
-@media all and (min-width: 481px) and (max-width: 1024px) {
-  img {
-    width: 70vw;
+@media all and (max-width: 1400px) {
+  #video-wrapper {
+    width: 75%;
+  }
+}
+
+@media all and (max-width: 1260px) {
+  #content,
+  #links {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  nav {
-    font-size: 3.5vw;
-    padding: 10px;
+  #video-wrapper {
+    max-width: 80%;
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 935px) {
+  #releasetext {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #cxa-logo > img {
+    width: 200px;
   }
 
-  .content {
-    width: 70vw;
+  #releasetext {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  #video-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #content,
+  #links {
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }
