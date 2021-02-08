@@ -99,6 +99,7 @@ a:hover {
 #links {
   display: flex;
   flex-direction: row;
+  margin-bottom: 2.5rem;
 }
 
 #video-wrapper {
