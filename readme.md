@@ -4,10 +4,6 @@ Minimal static and responsive landing page for the Berlin music label [Crux Axul
 
 ---
 
-## Preview
-
-[![Crux Axul](https://github.com/videothrone/crux-axul/blob/master/screenshot.png)](https://www.cruxaxul.com)
-
 ## Online
 
 https://www.cruxaxul.com
@@ -24,8 +20,5 @@ Continuous Deployment on Netlify |
 
 ## Future
 
-- Proper website with catalogue, embedded social media, online shop etc.
+- Proper website with catalogue, embedded social media etc.
 
-## Credits
-
-Background Artwork by Sarah Kowalewski
