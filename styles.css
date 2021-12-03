@@ -28,9 +28,6 @@
   font-family: "AlteHaasGroteskRegular";
   src: url("./fonts/AlteHaasGroteskRegular.ttf") format("truetype");
 }
-html {
-  height: 100%;
-}
 
 body {
   background-image: url("./img/cxa005-grain.jpg");
@@ -41,11 +38,7 @@ body {
   color: var(--sec-color);
   font-size: 10px;
   margin: 0;
-  height: 100%;
-  min-height: -webkit-calc(100% - 20px);
-  min-height: -moz-calc(100% - 20px);
-  min-height: calc(100% - 20px);
-  position: relative;
+  height: 100vh;
 }
 
 nav {
@@ -160,9 +153,9 @@ a:hover {
 }
 
 @media all and (max-width: 767px) {
-  /* body {
+  body {
     height: 100%;
-  } */
+  }
 
   #cxa-logo > img {
     width: 10rem;
