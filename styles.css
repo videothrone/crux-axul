@@ -2,6 +2,7 @@
   --main-color: #dfb443;
   --sec-color: #ffffff;
 }
+
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -33,8 +34,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  border: 0.35rem solid var(--main-color);
   color: var(--sec-color);
   font-size: 10px;
+  width: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -120,7 +124,6 @@ a:hover {
 
 .iframe {
   margin: auto;
-  padding: 1%;
 }
 
 #cxa-logo {
@@ -151,9 +154,13 @@ a:hover {
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
+  body {
+    height: 100%;
+  }
+
   #cxa-logo > img {
-    width: 200px;
+    width: 10rem;
   }
 
   #releasetext {
@@ -175,5 +182,14 @@ a:hover {
   #links {
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .iframe {
+    max-width: 100%;
+    width: 300px;
+    padding: 0;
+    text-align: center;
   }
 }
