@@ -236,6 +236,11 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
+#content_releases .content_releases_card_cat {
+  font-size: 1rem !important;
+  color: black !important;
+}
+
 #content_links {
   display: none;
   font-size: 1.6rem;
