@@ -222,6 +222,15 @@ a:hover {
   background-color: var(--main-color);
 }
 
+#content_releases .content_releases_card:hover {
+  background-color: var(--sec-color);
+  color: var(--main-color);
+}
+
+#content_releases .content_releases_card:hover div {
+  color: var(--main-color);
+}
+
 #content_releases .content_releases_card div {
   line-height: 1.2;
   color: var(--sec-color);
