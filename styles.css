@@ -223,11 +223,13 @@ a:hover {
 }
 
 #content_releases .content_releases_card div {
+  line-height: 1.2;
   color: var(--sec-color);
   padding-left: 1rem;
 }
 
 #content_releases .content_releases_card div:nth-child(3) {
+  margin-top: 0.3rem;
   margin-bottom: 1rem;
 }
 
