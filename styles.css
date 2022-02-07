@@ -44,7 +44,6 @@ nav {
   font-family: "UnifrakturCook-Bold-Terrible", Helvetica, Arial, serif;
   font-size: calc(1rem + 2vmin);
   margin-top: 2.5rem;
-  margin-left: 2rem;
 }
 nav > ul {
   list-style: none;
@@ -52,16 +51,12 @@ nav > ul {
 
 #header_content {
   display: flex;
-  /* flex-direction: row;
-  flex-wrap: nowrap; */
-  /* position: relative; */
   justify-content: space-between;
 }
 #header_logo {
   height: auto;
   width: 30.7rem;
   display: block;
-  margin-right: 4rem;
   position: relative;
   padding: 2.5rem;
 }
@@ -81,6 +76,7 @@ nav > ul {
   outline: none;
   position: relative;
   width: auto;
+  margin-bottom: 2rem;
 }
 #header_menu ul li a::before,
 #header_menu ul li a:link::before,
@@ -109,14 +105,6 @@ nav > ul {
   text-align: center;
 }
 
-a:link,
-a:visited,
-a:active,
-a:hover,
-a:active,
-a:focus {
-  text-decoration: none;
-}
 a {
   color: var(--main-color);
   -o-transition: color 0.3s ease-out, background 1s ease-in;
@@ -127,8 +115,18 @@ a {
   transition: color 0.3s ease-out, background 1s ease-in;
 }
 
+a:link,
+a:visited,
+a:active,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+
 a:hover {
   color: var(--sec-color);
+  font-style: italic;
 }
 
 .iframe {
@@ -147,6 +145,7 @@ a:hover {
   flex-direction: row;
   justify-content: center;
   margin: 0 2rem 2rem 25rem;
+  line-height: 1.4;
 }
 
 #content span {
@@ -160,6 +159,10 @@ a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 2.5rem;
+}
+
+#links .links_link {
+  width: 100%;
 }
 
 #cxa-logo {
@@ -177,7 +180,21 @@ a:hover {
 #content_home {
   display: flex;
 }
-
+#content_home .out-now {
+  color: var(--sec-color);
+  font-size: 2rem;
+  background-color: var(--main-color);
+  padding: 0.5rem 1rem;
+  -o-transition: color 0.3s ease-out, background 0.3s ease-in;
+  -ms-transition: color 0.3s ease-out, background 0.3s ease-in;
+  -moz-transition: color 0.3s ease-out, background 0.3s ease-in;
+  -webkit-transition: color 0.3s ease-out, background 0.3s ease-in;
+  transition: color 0.3s ease-out, background 0.3s ease-in;
+}
+#content_home .out-now:hover {
+  background-color: var(--sec-color);
+  color: var(--main-color);
+}
 #content_home .content_home_img {
   max-width: 25rem;
   margin-bottom: 1rem;
@@ -201,13 +218,34 @@ a:hover {
   width: 100%;
 }
 
+#content_releases .content_releases_card {
+  background-color: var(--main-color);
+}
+
+#content_releases .content_releases_card div {
+  color: var(--sec-color);
+  padding-left: 1.5rem;
+}
+
+#content_releases .content_releases_card div:nth-child(3) {
+  margin-bottom: 1rem;
+}
+
 #content_releases .content_releases_card img {
-  max-width: 15rem;
+  max-width: 100%;
+  margin-bottom: 0.5rem;
 }
 
 #content_links {
   display: none;
   font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+#content_links hr.hrr_releases {
+  border: none;
+  border-top: 0.15rem dashed var(--sec-color);
+  margin: 1rem 0;
 }
 
 /* ANIMATION LOGO */
@@ -239,11 +277,27 @@ a:hover {
   }
 }
 
+@media all and (max-width: 1300px) {
+  #content {
+    margin: 0 2rem 2rem 2rem;
+  }
+}
+
 @media all and (max-width: 935px) {
   #releasetext {
     font-size: 1.6rem;
     display: flex;
     justify-content: center;
+  }
+  nav {
+    font-size: calc(1rem + 1vmin);
+  }
+  #content_home {
+    flex-direction: column;
+  }
+  #content_home_right {
+    margin-top: 2rem;
+    padding: 0;
   }
 }
 
@@ -261,19 +315,43 @@ a:hover {
     width: 100%;
     text-align: center;
   }
+}
 
-  #content,
-  #links {
-    flex-wrap: wrap;
-    justify-content: flex-start;
+@media all and (max-width: 500px) {
+  /* #header_content {
+    margin: -1rem -0.6rem -1rem -1rem;
+  } */
+
+  #header_logo {
+    max-width: 10rem;
+  }
+
+  #header_menu ul li {
+    margin: 0 1.8rem;
+  }
+
+  nav {
+    font-size: calc(0.7rem + 1vmin);
+  }
+
+  #content {
+    font-size: 1rem;
+  }
+
+  #content_home .content_home_img {
+    max-width: calc(100vw - 4rem);
+  }
+
+  #content_home .out-now {
+    font-size: 1.4rem;
   }
 }
 
-@media all and (max-width: 320px) {
+/* @media all and (max-width: 320px) {
   .iframe {
     max-width: 100%;
     width: 300px;
     padding: 0;
     text-align: center;
   }
-}
+} */

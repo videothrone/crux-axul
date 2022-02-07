@@ -23,4 +23,24 @@ linksSelector.addEventListener("click", function() {
   contentLinksSelector.style.display = "block";
 });
 
-// ✺ JSON DATA PULL ✺
+// ✺ FETCH JSON DATA W-I-P ✺
+
+function getJSON(url) {
+  fetch(url)
+    .then(response => response.json())
+    .then(data => displayJSONdata(data.releases))
+    .catch(error => {
+      console.error(error);
+    });
+}
+
+// getJSON("./releases.json");
+
+// ✺ DISPLAY JSON DATA ✺
+
+function displayJSONdata(data) {
+  // MAIN PAGE
+  // console.log("data:", data);
+  // console.log("contentHomeRightSection: ", contentHomeRightSection);
+  // RELEASES PAGE
+}
