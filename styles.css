@@ -137,6 +137,7 @@ a:hover {
   height: 30vmin;
 }
 
+
 #content {
   color: var(--sec-color);
   display: flex;
@@ -146,12 +147,6 @@ a:hover {
   justify-content: center;
   margin: 0 2rem 2rem 25rem;
   line-height: 1.4;
-}
-
-#content span {
-  color: var(--sec-color);
-  margin-left: 0.3rem;
-  margin-right: 0.3rem;
 }
 
 #links {
