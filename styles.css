@@ -1,11 +1,11 @@
 :root {
-  --main-color: #dfb443;
+  --main-color: #FFFF00;
   --sec-color: #ffffff;
 }
 
 * {
   box-sizing: border-box;
-  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -176,7 +176,7 @@ a:hover {
   display: flex;
 }
 #content_home .out-now {
-  color: var(--sec-color);
+  color: black;
   font-size: 2rem;
   background-color: var(--main-color);
   padding: 0.5rem 1rem;
@@ -188,7 +188,7 @@ a:hover {
 }
 #content_home .out-now:hover {
   background-color: var(--sec-color);
-  color: var(--main-color);
+  color: black;
 }
 #content_home .content_home_img {
   max-width: 25rem;
@@ -219,16 +219,16 @@ a:hover {
 
 #content_releases .content_releases_card:hover {
   background-color: var(--sec-color);
-  color: var(--main-color);
+  color: black;
 }
 
 #content_releases .content_releases_card:hover div {
-  color: var(--main-color);
+  color: black;
 }
 
 #content_releases .content_releases_card div {
   line-height: 1.2;
-  color: var(--sec-color);
+  color: black;
   padding-left: 1rem;
 }
 
@@ -257,6 +257,10 @@ a:hover {
   border: none;
   border-top: 0.15rem dashed var(--sec-color);
   margin: 1rem 0;
+}
+
+.stars {
+  color: var(--main-color);
 }
 
 /* ANIMATION LOGO */
