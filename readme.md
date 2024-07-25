@@ -1,24 +1,19 @@
 # Crux Axul
 
-Minimal static and responsive landing page for the Berlin music label [Crux Axul](https://www.cruxaxul.com). In constant development. :)
+Minimal static and responsive legacy landing page for the Berlin music label [Crux Axul](https://www.cruxaxul.com). Replaced by a more state-of-the-art Vue project which you can check out [here](https://github.com/videothrone/crux-axul-vue).
 
 ---
 
-## Online
-
-https://www.cruxaxul.com
-
 ## Tech
 
-HTML & CSS <br>
-Continuous Deployment on Netlify |
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7a9099ab-7405-4a4b-9158-9fd381b5df26/deploy-status)](https://app.netlify.com/sites/admiring-einstein-59e50c/deploys)
+HTML, CSS, JS
 
 ## Features
 
 - Responsive minimalistic landing page with embedded Soundcloud and links to Bandcamp and Social Media
 
-## Future
 
-- Proper website with catalogue, embedded social media etc.
+## Local setup
+
+- Just run the index.html via something Live-Server
 
